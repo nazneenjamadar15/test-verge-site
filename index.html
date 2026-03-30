@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VergeCloud Test</title>
+  <title>VergeCloud Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px;
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    img, video {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    a.button:hover {
+      background: #2563eb;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>VergeCloud Test Site</h1>
+<header>
+  🚀 VergeCloud Demo Site
+</header>
 
-<h2>Image Test</h2>
-<img src="image.jpg" width="300">
+<div class="container">
 
-<h2>Video Test</h2>
-<video width="320" controls>
-  <source src="video.mp4" type="video/mp4">
-</video>
+  <div class="card">
+    <h2>🖼 Image Test</h2>
+    <img src="image.jpg">
+  </div>
 
-<h2>File Download</h2>
-<a href="sample.pdf">Download PDF</a>
+  <div class="card">
+    <h2>🎥 Video Test</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card">
+    <h2>📄 Document Download</h2>
+    <a href="sample.pdf" class="button">Download PDF</a>
+  </div>
+
+</div>
 
 </body>
 </html>
