@@ -10,26 +10,33 @@
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: white;
-      text-align: center;
+
+      /* Center everything */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
     header {
-      padding: 40px;
       font-size: 32px;
       font-weight: bold;
-      background: linear-gradient(90deg, #3b82f6, #06b6d4);
+      margin-bottom: 30px;
+      text-align: center;
     }
 
     .container {
-      padding: 40px;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
     }
 
     .card {
       background: #1e293b;
       padding: 20px;
-      margin: 20px auto;
+      margin: 20px 0;
       border-radius: 12px;
-      max-width: 600px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     }
 
@@ -64,22 +71,18 @@
 
 <div class="container">
 
-  <!-- Image Section -->
   <div class="card">
     <h2>🖼 Image Test</h2>
     <img src="image.jpg" alt="Test Image">
   </div>
 
-  <!-- Video Section -->
   <div class="card">
     <h2>🎥 Video Test</h2>
     <video controls>
       <source src="video.mp4" type="video/mp4">
-      Your browser does not support video.
     </video>
   </div>
 
-  <!-- Download Section -->
   <div class="card">
     <h2>📄 Document Download</h2>
     <a href="sample.pdf" class="button" download>
