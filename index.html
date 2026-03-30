@@ -29,26 +29,28 @@
       padding: 20px;
       margin: 20px auto;
       border-radius: 12px;
-      max-width: 500px;
+      max-width: 600px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     }
 
     img, video {
       max-width: 100%;
       border-radius: 10px;
+      margin-top: 10px;
     }
 
-    a.button {
+    .button {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
       padding: 10px 20px;
       background: #3b82f6;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      transition: 0.3s;
     }
 
-    a.button:hover {
+    .button:hover {
       background: #2563eb;
     }
   </style>
@@ -62,21 +64,27 @@
 
 <div class="container">
 
+  <!-- Image Section -->
   <div class="card">
     <h2>🖼 Image Test</h2>
-    <img src="image.jpg">
+    <img src="image.jpg" alt="Test Image">
   </div>
 
+  <!-- Video Section -->
   <div class="card">
     <h2>🎥 Video Test</h2>
     <video controls>
       <source src="video.mp4" type="video/mp4">
+      Your browser does not support video.
     </video>
   </div>
 
+  <!-- Download Section -->
   <div class="card">
     <h2>📄 Document Download</h2>
-    <a href="sample.pdf" class="button">Download PDF</a>
+    <a href="sample.pdf" class="button" download>
+      Download PDF
+    </a>
   </div>
 
 </div>
